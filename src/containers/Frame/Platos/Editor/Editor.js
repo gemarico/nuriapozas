@@ -1,5 +1,4 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
 
 export const Ball =
     () => {
@@ -19,17 +18,27 @@ export const Ball =
             const el = e.target
             el.removeEventListener('mousemove', move)
         }
-        const Wrapper = styled.div`
-  width: 150px;
-  height: 150px;
-  background-image: url("img/prueba.jpg");
-  background-repeat: no-repeat;
-  position: absolute;
-  cursor:pointer;
-  `
+
+        const divStyle = {
+            width: '150px',
+            height: '150px',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            position: 'absolute',
+            cursor: 'pointer'
+        }
+
+        const imgStyle = {
+            position: 'fixed',
+            width: '150px',
+            height: '150px',
+
+        }
         return (
-            <Wrapper onMouseDown={add} onMouseUp={remove} />
+            <div style={divStyle} onMouseDown={add} onMouseUp={remove}><img style={imgStyle} id="img" src="" draggable="false" alt="" ></img></div>
         )
+
+
     }
 
 export default Ball;

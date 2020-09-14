@@ -5,8 +5,8 @@ class Navbar extends React.Component {
         return (
             <div>
                 <nav>
-                    <a>Volver a la tienda </a>
-                    <a> Carrito</a>
+                    Volver a la tienda
+                    Carrito
                 </nav>
             </div>
         );

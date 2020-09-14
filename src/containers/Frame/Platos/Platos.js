@@ -1,6 +1,7 @@
 import React, { useState, forwardRef, useImperativeHandle } from "react";
 import { PlatosDiv } from './Platos.style';
 import Ball from './Editor/Editor';
+
 const Platos = forwardRef((props, ref) => {
     const [value, setValue] = useState(false);
 
@@ -15,6 +16,8 @@ const Platos = forwardRef((props, ref) => {
         }
     };
 
+
+
     useImperativeHandle(ref, () => {
         return {
             showToast: showToast
@@ -23,9 +26,10 @@ const Platos = forwardRef((props, ref) => {
 
     return (
         <PlatosDiv>
-            <h1 className="title">Tu Plato</h1>
-            <img id="img" src=""></img>
             <Ball></Ball>
+            <h1 className="title">Tu Plato</h1>
+
+
         </PlatosDiv>
     );
 });

@@ -4,7 +4,7 @@ class Footer extends React.Component {
     render() {
         return (
             <FooterDiv>
-                <a>Nuria Pozas Ceramic & Design 2020</a>
+                Nuria Pozas Ceramic and Design 2020
             </FooterDiv>
         );
     }
