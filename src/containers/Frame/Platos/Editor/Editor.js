@@ -40,5 +40,4 @@ export const Ball =
 
 
     }
-
 export default Ball;
